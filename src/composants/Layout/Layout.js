@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
-import Logo from "../composants/Logo/Logo";
+import D_footer from "../D_footer/D_footer";
+import Logo from "../Logo/Logo"
 
-import D_footer from "./D_footer";
 
 
 const Layout = () => {

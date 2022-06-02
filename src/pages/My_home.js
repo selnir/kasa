@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../composants/Card";
+import Card from "../composants/Card/Card";
 import logements from "../logements.json"
 import Banner from "../composants/Banner/Banner"
 

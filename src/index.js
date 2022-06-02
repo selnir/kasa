@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import A_propos from './pages/A_propos.js';
 import My_home from './pages/My_home.js';
-import Layout from "./composants/Layout"
+import Layout from "./composants/Layout/Layout"
 import NoPage from './pages/NoPage.js';
 import Fiche_logement from './pages/Fiche_logement'
 
