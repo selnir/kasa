@@ -14,7 +14,7 @@ export default function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<My_home />} />
             <Route path="A_propos" element={<A_propos />} />
-            <Route path="Fiche_logement/" element={<Fiche_logement/>} />
+            <Route path="Fiche_logement/:id" element={<Fiche_logement/>} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
