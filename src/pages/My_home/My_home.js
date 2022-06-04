@@ -4,11 +4,11 @@ import logements from "../../logements.json"
 import Banner from "../../composants/Banner/Banner"
 
 function My_home() {
-    return (
+    return (<section className="My_home">
 
-      <section>
         <Banner></Banner>
-              {logements.map(logement => (<Card id={logement.id} img={logement.cover} titre={logement.title}></Card>))}
+            <section className="wrappcard">{logements.map(logement => (<Card id={logement.id} img={logement.cover} titre={logement.title}></Card>))}
+          </section>
       </section>
     );
     }
