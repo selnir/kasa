@@ -1,0 +1,18 @@
+//general conf and vars
+@import "./_conf";
+@import "./global";
+
+//components
+@import "../composants/Banner/Banner.scss";
+@import "../composants/Carrousel/Carrousel.scss";
+@import "../composants/Card/Cards.scss";
+@import "../composants/Collapse/Collapse.scss";
+@import "../composants//D_footer/D_footer.scss";
+@import "../composants/Layout/Layout.scss";
+@import "../composants/Logo/Logo.scss";
+
+//pages
+@import "../pages/A_propos/A_propos.scss";
+@import "../pages/Fiche_logements/Fiche_logements.scss";
+@import "../pages/My_home/My_home.scss";
+@import "../pages/NoPage/NoPage.scss";

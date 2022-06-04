@@ -1,4 +1,4 @@
-function D_footer() {
+function j_footer() {
     return <img src="logo_footer.jpg" alt="KASA"></img>;
   }
-  export default D_footer;
+  export default j_footer;
