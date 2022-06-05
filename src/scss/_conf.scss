@@ -1,7 +1,7 @@
 /*|---------------| App Color Schema|---------------*/
 $BLUE: #00376C;
-$PINK: #B51942;
-$GRAY: #707070;
+$PINK: #FF6060;
+$GRAY: #F6F6F6;
 
 // Usage example:  @media #{$BREAKPOINT-DESK}
 
@@ -12,11 +12,4 @@ $BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 480px)";
 
 /*|---------------|MIXINS|---------------*/
 
-@mixin margin-page {
-    width: calc(100% - 40px);
-    margin: 0 auto;
   
-    @media #{$BREAKPOINT-DESK} {
-      max-width: 1000px;
-    }
-  }

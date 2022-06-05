@@ -1,4 +1,4 @@
 function Logo() {
-    return <img src="/assets/logo_kasa.jpg" alt="KASA"></img>;
+    return <div className="logo"><img src="/assets/logo_kasa.jpg" alt="KASA"></img></div>;
   }
   export default Logo;
