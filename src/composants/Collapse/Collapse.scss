@@ -1,11 +1,29 @@
-.collapsible .content {
-    padding: 6px;
-    background-color: #f6f6f6;
-    border-bottom: 10px;
-}
-.collapsible .header {
-    background-color: #FF6060;
-    padding: 6px;
-    cursor: pointer;
-    border-radius: 10px;
+
+.collapsible{
+    margin-bottom: 33px;
+    font-weight: 500;
+    font-weight: 500;
+    font-size: 24px;
+    .content {
+        padding: 6px;
+        background-color: #f6f6f6;
+        border-bottom: 10px;
+        color: #FF6060;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .name {
+        display: flex;
+        justify-content: space-between;
+        background-color: #FF6060;
+        padding: 6px;
+        cursor: pointer;
+        border-radius: 5px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }   
 }
