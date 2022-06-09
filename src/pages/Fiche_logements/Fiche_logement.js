@@ -18,9 +18,8 @@ function Fiche_logement() {
   let htmlhost='';
   let htmlpicture='';
   let htmlrat='';
-  let htmlrating;
-  let starfull=<img src='/assets/etoile_pleine.png'></img>;
-  let starempty=<img src='/assets/Vectoretoile_vide.png'></img>;
+  let starfull=<img src='/assets/etoile_pleine.png' alt=''></img>;
+  let starempty=<img src='/assets/Vectoretoile_vide.png' alt=''></img>;
 
   // htmltag=<tagfiche name="hello"></tagfiche>;
   // htmlCarousel=<Carousel children >{logement.cover}</Carousel>;
@@ -52,7 +51,7 @@ function Fiche_logement() {
               break;
               default:
               }
-              htmlpicture=logement.pictures.map((image)=><img src={image}></img>);
+              htmlpicture=logement.pictures.map((image)=><img src={image} alt={image}></img>);
               htmltitre=<h2 className='titre'>{logement.title}</h2>;
               htmlhost=<div className='host'><div className='avatar'><div className='hostname'>{logement.host.name}</div><img src={logement.host.picture} alt={logement.host.name}></img></div>{htmlrat}</div>;
               htmltag=logement.tags.map((tagname)=><h3 className='tag'>{tagname}</h3>);
