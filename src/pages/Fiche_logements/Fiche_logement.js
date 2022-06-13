@@ -8,11 +8,12 @@ import rating from '../../composants/Rating/Rating';
 import Carousel from '../../composants/Carousel/Carousel';
 
 
+
 function Fiche_logement() {
 
   let test=0;
   const navigate = useNavigate();
-  const urlcards=`/`;
+  const urlcards=`/NoPage`;
  let htmltag='';
   let htmllistequi='';
   let htmlrat='';
@@ -41,7 +42,7 @@ function Fiche_logement() {
                             <div className='wrappertag'>{htmltag}</div>
                           </div>
                           <div className='host'>
-                            <div className='avatar'>
+                            <div className='avatar'onClick={()=>navigate(urlcards)}>
                               <div className='hostname'>{logement.host.name}</div>
                                 <img src={logement.host.picture} alt={logement.host.name}></img>
                                 </div>{htmlrat}</div>
@@ -50,11 +51,10 @@ function Fiche_logement() {
                       <Collapse name="equipements" description={htmllistequi} ></Collapse>
                     </section></section>;
                     
-                  }
-                  ;
+                  };
         });
         if(test<1){
-          html=navigate(urlcards);
+          navigate(urlcards);
         }
     return <>{html}</>;
   }

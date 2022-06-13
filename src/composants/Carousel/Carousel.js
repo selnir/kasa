@@ -2,25 +2,10 @@ import React from "react";
 import "../Carousel/Carousel.scss";
 import { useState } from "react";
 import { useEffect } from "react";
-// import { Carousel } from 'react-responsive-carousel';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-
-// export default function ResponsiveCarouselComponent(props) {
-//     return (
-//         <div>
-//             <div className="carousel-container">
-//                 <Carousel infiniteLoop autoPlay useKeyboardArrows centerMode dynamicHeight>
-//                 {props.name.map((image)=> <div><img src={image} alt={image}></img></div>) }                
-//                 </Carousel>
-//             </div>
-//         </div>
-//     );
-// }
 
 const Carousel = (props) => {
     const {children} = props
-
     const [currentIndex, setCurrentIndex] = useState(0)
     const [length, setLength] = useState(children.length)
 
