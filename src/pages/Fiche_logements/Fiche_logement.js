@@ -39,15 +39,16 @@ function Fiche_logement() {
                                 <p className='location'>{logement.location}</p>
                             </div>
                             <div className='wrappertag'>{htmltag}</div>
-                          </div><div className='host'>
+                          </div>
+                          <div className='host'>
                             <div className='avatar'>
                               <div className='hostname'>{logement.host.name}</div>
                                 <img src={logement.host.picture} alt={logement.host.name}></img>
                                 </div>{htmlrat}</div>
-                          </section>
+                          </section><section className='wrapperdescription'>
                       <Collapse name="description" description={logement.description}></Collapse>
                       <Collapse name="equipements" description={htmllistequi} ></Collapse>
-                    </section>;
+                    </section></section>;
                     
                   }
                   ;
