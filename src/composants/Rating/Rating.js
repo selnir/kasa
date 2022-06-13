@@ -2,8 +2,8 @@ import React from 'react';
 
 function rating(Nrating) {
     let htmlrating;
-    let starfull=<i className="fa-solid fa-star-sharp"></i>;
-    let starempty=<i className="fa-solid fa-star-sharp"></i>;
+    let starfull=<img src='/assets/etoile_pleine.png' alt=''></img>;
+    let starempty=<img src='/assets/Vectoretoile_vide.png' alt=''></img>;
 
     switch(Nrating){
         case 0:
