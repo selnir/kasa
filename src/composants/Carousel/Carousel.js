@@ -34,9 +34,14 @@ const Carousel = (props) => {
     return (
         <div className="carousel-container">
             <div className="carousel-wrapper">
-                <button onClick={prev} className="left-arrow">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
+            {(() => {if (length === 1) {
+                return 
+            } else if (length > 1) {
+                return (<button onClick={prev} className="left-arrow">
+                <i class="fa-solid fa-chevron-left"></i></button>)
+            }})()}                
+            
+            
                 <div className="carousel-content-wrapper">
                 <div
                     className="carousel-content"
@@ -44,9 +49,14 @@ const Carousel = (props) => {
                         {children}
                     </div>
                 </div>
-                <button onClick={next} className="right-arrow">
+                {(() => {if (length === 1) {
+                return 
+            } else if (length > 1) {
+                return (<button onClick={next} className="right-arrow">
                 <i class="fa-solid fa-chevron-right"></i>
-                </button>
+                </button>)
+            }})()}
+                
             </div>
         </div>
     )
