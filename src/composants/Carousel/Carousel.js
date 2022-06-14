@@ -33,7 +33,10 @@ const Carousel = (props) => {
 
     return (
         <div className="carousel-container">
+
             <div className="carousel-wrapper">
+            <p className="numerotation">{currentIndex+1}/{length}</p>
+
             {(() => {if (length === 1) {
                 return 
             } else if (length > 1) {
