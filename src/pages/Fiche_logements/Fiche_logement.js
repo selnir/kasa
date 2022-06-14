@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Collapse from "../../composants/Collapse/Collapse";
 import logements from "../../logements.json" ;
 import { useNavigate } from 'react-router';
+import { useEffect } from 'react';
 import rating from '../../composants/Rating/Rating';
 import Carousel from '../../composants/Carousel/Carousel';
 
@@ -53,9 +54,12 @@ function Fiche_logement() {
                     
                   };
         });
-        if(test<1){
-          navigate(urlcards);
-        }
+        useEffect(() => {
+          navigate({
+            goTo: '/NoPage',
+            when: !test,
+          })
+        }, [navigate])
     return <>{html}</>;
   }
   export default Fiche_logement;
