@@ -6,6 +6,8 @@ import rating from '../../composants/Rating/Rating';
 import Carousel from '../../composants/Carousel/Carousel';
 
 
+
+
 function Fiche_logement() {
 
   let htmltag='';
@@ -19,12 +21,10 @@ function Fiche_logement() {
 
   const logement=logements.find(function (logement) {
     if(logement.id===id.id){
-      test=true;
       return logement;
     }
   });  
 
-  console.log(logement,"logement")
 
   if(logement){
 
