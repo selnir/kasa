@@ -7,7 +7,7 @@ function My_home() {
     return (<section className="My_home">
 
         <Banner img="/assets/Banner_desktop.jpg" texte="Chez Vous, partout et ailleurs"></Banner>
-            <section className="wrappcard">{logements.map(logement => (<Card id={logement.id} img={logement.cover} titre={logement.title}></Card>))}
+            <section className="wrappcard">{logements.map(logement => (<Card key={logement.id} id={logement.id} img={logement.cover} titre={logement.title}></Card>))}
           </section>
       </section>
     );

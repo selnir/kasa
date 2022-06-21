@@ -12,8 +12,8 @@ const Layout = () => {
       <Logo></Logo>
       <nav>
         <ul>
-          <li>
-            <Link to="/">Acceuil</Link>
+          <li >
+            <Link  to="/">Acceuil</Link>
           </li>
           <li>
             <Link to="/A_propos">A propos</Link>

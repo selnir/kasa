@@ -33,9 +33,9 @@ function Fiche_logement() {
 
               htmlrat=rating(intrating);
 
-              htmltag=logement.tags.map((tagname)=><h3 className='tag'>{tagname}</h3>);
-              htmllistequi=logement.equipments.map((equipment)=><li className='equipement'>{equipment}</li>);
-              htmlcarousel=logement.pictures.map((image)=><img src={image} alt={image}></img>)
+              htmltag=logement.tags.map((tagname)=><h3 key={tagname} className='tag'>{tagname}</h3>);
+              htmllistequi=logement.equipments.map((equipment)=><li key={equipment} className='equipement'>{equipment}</li>);
+              htmlcarousel=logement.pictures.map((image)=><img key={image} src={image} alt={image}></img>)
               html=<section className='fichelogement'>
                       <div className='wrapper_carousel'><Carousel>{htmlcarousel}</Carousel></div>
                         <section className="details">

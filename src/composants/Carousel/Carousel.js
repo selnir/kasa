@@ -41,7 +41,7 @@ const Carousel = (props) => {
                 return 
             } else if (length > 1) {
                 return (<button onClick={prev} className="left-arrow">
-                <i class="fa-solid fa-chevron-left"></i></button>)
+                <i className="fa-solid fa-chevron-left"></i></button>)
             }})()}                
             
             
@@ -56,7 +56,7 @@ const Carousel = (props) => {
                 return 
             } else if (length > 1) {
                 return (<button onClick={next} className="right-arrow">
-                <i class="fa-solid fa-chevron-right"></i>
+                <i className="fa-solid fa-chevron-right"></i>
                 </button>)
             }})()}
                 
