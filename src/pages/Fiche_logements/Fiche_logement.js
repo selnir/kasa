@@ -15,6 +15,7 @@ function Fiche_logement() {
   let htmlrat='';
   let html='';
   let htmlcarousel='';
+
   const id=useParams();
 
 ;
@@ -30,12 +31,13 @@ function Fiche_logement() {
 
  
               const intrating=parseInt(logement.rating);
+              
 
               htmlrat=rating(intrating);
 
-              htmltag=logement.tags.map((tagname)=><h3 key={tagname} className='tag'>{tagname}</h3>);
-              htmllistequi=logement.equipments.map((equipment)=><li key={equipment} className='equipement'>{equipment}</li>);
-              htmlcarousel=logement.pictures.map((image)=><img key={image} src={image} alt={image}></img>)
+              htmltag=logement.tags.map((tagname)=><h3 key={tagname+logement.id} className='tag'>{tagname}</h3>);
+              htmllistequi=logement.equipments.map((equipment)=><li key={equipment+logement.id} className='equipement'>{equipment}</li>);
+              htmlcarousel=logement.pictures.map((image)=><img key={image+logement.id} src={image} alt={image}></img>)
               html=<section className='fichelogement'>
                       <div className='wrapper_carousel'><Carousel>{htmlcarousel}</Carousel></div>
                         <section className="details">

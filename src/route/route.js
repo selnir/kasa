@@ -9,7 +9,7 @@ import Fiche_logement from '../pages/Fiche_logements/Fiche_logement';
 
 const route=
 <BrowserRouter>
-        <Routes>
+        <Routes >
           <Route path="/" element={<Layout />}>
             <Route index element={<My_home />} />
             <Route path="A_propos" element={<A_propos />} />
