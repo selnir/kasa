@@ -8,7 +8,7 @@ import Fiche_logement from '../pages/Fiche_logements/Fiche_logement';
 
 
 const route=
-<BrowserRouter>
+<BrowserRouter key="RouterKasa">
         <Routes >
           <Route path="/" element={<Layout />}>
             <Route index element={<My_home />} />
