@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import A_propos from '../pages/A_propos/A_propos';
 import My_home from '../pages/My_home/My_home';
 import Layout from "../composants/Layout/Layout"
@@ -8,7 +8,7 @@ import Fiche_logement from '../pages/Fiche_logements/Fiche_logement';
 
 
 const route=
-<BrowserRouter key="RouterKasa">
+<HashRouter key="RouterKasa">
         <Routes >
           <Route path="/" element={<Layout />}>
             <Route index element={<My_home />} />
@@ -17,7 +17,7 @@ const route=
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
-</BrowserRouter>  
+</HashRouter>  
 
 export default [route];
 
